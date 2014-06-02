@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/stylepoints.css" />
+</head>
+<body>
+<title>TOUCAN - Search points</title>
+<div class="searchptitle">Search points</div>
+</br>
+</br>
+<label class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-3" id="topleftlatlabel">Top left latitude:      </label>
+<input class="col-xs-5 col-sm-4 col-md-4 col-lg-4 col-sm-offset-0 col-md-offset-0 col-lg-offset-0" type="text" id="topleftlat"  name="topleftlat"  class="form-control" placeholder="Enter top left lat"  /></br></br></br></br>
+<label class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-3" id="topleftlonlabel">Top left longitude:     </label>
+<input class="col-xs-5 col-sm-4 col-md-4 col-lg-4 col-sm-offset-0 col-md-offset-0 col-lg-offset-0" type="text" id="topleftlon"  name="topleftlon"  class="form-control" placeholder="Enter top left lon"  /></br></br></br></br>
+<label class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-3" id="botrightlatlabel">Bottom right latitude: </label>
+<input class="col-xs-5 col-sm-4 col-md-4 col-lg-4 col-sm-offset-0 col-md-offset-0 col-lg-offset-0" type="text" id="botrightlat" name="botrightlat" class="form-control" placeholder="Enter bot right lat" /></br></br></br></br>
+<label class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-3" id="botrightlonlabel">Bottom right longitude:</label>
+<input class="col-xs-5 col-sm-4 col-md-4 col-lg-4 col-sm-offset-0 col-md-offset-0 col-lg-offset-0" type="text" id="botrightlon" name="botrightlon" class="form-control" placeholder="Enter bot right lon" /></br></br></br></br>
+	
+	
+	
+</br>
+<div id ='message' class="message"></div> </br>
+<div class="center"><input type="button" id="submit"  class="btn btn-primary submit " value="Submit" onClick="submit()"> 
+<input type="button" id="cancel"  class="btn btn-danger cancel" value="Cancel" onclick="self.location.href='menu.html'"> </div> 
+
+<script src="https://code.jquery.com/jquery.js"></script>
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/points.js"></script>
+</body>
+</html>

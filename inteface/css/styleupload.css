@@ -1,0 +1,46 @@
+.uploadtitle{
+
+text-align: center; 
+font-weight: bold;
+font-size:25px;
+}
+
+#data_file,#image_file{
+
+  display:block;
+  margin : 0 auto;
+}
+
+.center
+{
+    text-align:center;
+}
+
+.submit,.cancel{
+  display:inline;
+
+}
+.success{
+font-weight: bold;
+color:green;
+text-align: center; 
+visibility: hidden; 
+}
+
+.message{
+font-weight: bold;
+color:red;
+text-align: center; 
+visibility: hidden; 
+}
+
+#datalabel,#imagelabel{
+font-weight: bold;
+text-align:right;
+
+}
+.infodata,.infoimage
+{	
+	font-size:8px; 
+    text-align:center;
+}

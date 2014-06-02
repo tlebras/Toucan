@@ -1,0 +1,31 @@
+.submit,.cancel{
+  display:inline;
+
+}
+
+.center
+{
+    text-align:center;
+}
+.searchptitle{
+
+text-align: center; 
+font-weight: bold;
+font-size:25px;
+}
+
+#topleftlatlabel,#topleftlonlabel,#botrightlatlabel,#botrightlonlabel{
+
+font-weight: bold;
+text-align:right;
+
+
+}
+
+.message{
+font-weight: bold;
+color:red;
+text-align: center; 
+visibility: hidden; 
+}
+

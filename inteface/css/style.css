@@ -1,0 +1,54 @@
+html{
+font-family: Arial;
+}
+
+#image_toucan{
+display:block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.toucantitle{
+
+text-align: center; 
+font-weight: bold;
+}
+
+.uploadlabel,.searchmeasurelabel{
+ display: inline-block;
+margin-left: 50px;
+font-weight: bold;
+}
+
+.createlabel,.searchpointlabel{
+ display: inline-block;
+float: right;  
+margin-right:75px; 
+font-weight: bold;
+}
+
+#upload,#searchmeasure{
+ display: inline-block;
+margin-left: 100px;
+
+}
+
+
+#create,#searchpoint{
+ display: inline-block;
+float: right;  
+margin-right:100px; 
+
+}
+
+.instrumentlabel,.climatlabel{
+font-weight: bold;
+text-align: center; 
+}
+
+#instrument,#climat{
+  display:block;
+  margin : 0 auto;
+}
+

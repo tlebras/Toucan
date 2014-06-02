@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/styleclimat.css" />
+</head>
+<body>
+<title>TOUCAN - Climatology</title>
+<div class="climattitle">Upload your file - Climatology</div>
+
+
+</br>
+</br>
+</br>
+
+<label class="col-xs-4 col-sm-3 col-md-2 col-lg-1 col-xs-offset-1 col-sm-offset-2 col-md-offset-3 col-lg-offset-4" id="climatlabel">Climatology file:</label>
+<input type="hidden" name="MAX_FILE_SIZE" value="2097152">     
+<input class="col-xs-5 col-sm-4 col-md-4 col-lg-4 col-sm-offset-0 col-md-offset-0 col-lg-offset-1" type="file" id="climat_file" name="climat_file" >   </br> </br></br>
+<div class="infoclimat"> Requires a climatology file </div></br> 
+<div id ='message' class="message"></div> </br>
+
+<div class="center"><input type="button" id="submit"  class="btn btn-primary submit " value="Submit" onClick="submit()"> 
+<input type="button" id="cancel"  class="btn btn-danger cancel" value="Cancel" onclick="self.location.href='menu.html'"> </div> 
+
+<script src="https://code.jquery.com/jquery.js"></script>
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/climat.js"></script>
+</body>
+</html>

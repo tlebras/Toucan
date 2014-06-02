@@ -1,0 +1,38 @@
+.submit,.cancel{
+  display:inline;
+
+}
+
+.center
+{
+    text-align:center;
+}
+.instrumenttitle{
+
+text-align: center; 
+font-weight: bold;
+font-size:25px;
+}
+
+#namelabel{
+text-align:right;
+font-weight: bold;
+}
+
+#wavelabel{
+text-align:right;
+font-weight: bold;
+}
+
+.message{
+text-align:center;
+font-weight: bold;
+color:red;
+visibility: hidden; 
+}
+
+.col-lg-offset-2 {
+   
+	 display: inline;
+
+}

@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/stylecreate.css" />
+</head>
+<body>
+<title>TOUCAN - Metadata</title>
+<div class="createtitle">Send your metadata</div>
+
+
+</br>
+</br>
+</br>
+<label class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-3" id="namelabel">Name: </label>
+<input class="col-xs-5 col-sm-4 col-md-4 col-lg-4 col-sm-offset-0 col-md-offset-0 col-lg-offset-0" type="text" id="name" name="name" class="form-control" placeholder="Enter Name" />  </div> </br></br></br> 
+<label class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-3" id="instrumentlabel">Instrument:</label>
+<SELECT class="col-xs-5 col-sm-4 col-md-4 col-lg-4 col-sm-offset-0 col-md-offset-0 col-lg-offset-0" id ="instrument" name="instrument" class="form-control">
+		<OPTION VALUE="Selection">Selection...</OPTION>
+		<OPTION VALUE="MERIS">MERIS</OPTION>
+		<OPTION VALUE="VIIRS">VIIRS</OPTION>  <!-- This is not totally right, but since it's just an exemple  the select will need to fill himself -->
+		<OPTION VALUE="AATRS">AATRS</OPTION>
+	</SELECT></br></br>
+
+<div class="addlabel">You can also add an instrument <a href="instrument.html"> here </a>  </div> </br>	
+
+<label class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-3" id="regionnamelabel">Region name:     </label>
+<input class="col-xs-5 col-sm-4 col-md-4 col-lg-4 col-sm-offset-0 col-md-offset-0 col-lg-offset-0" type="text" id="regionname"   name="regionname"   class="form-control" placeholder="Enter region name"   /> </br></br> </br>
+<label class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-3" id="regioncoordslabel">Region coords: </label>
+<input class="col-xs-5 col-sm-4 col-md-4 col-lg-4 col-sm-offset-0 col-md-offset-0 col-lg-offset-0" type="text" id="regioncoords" name="regioncoords" class="form-control" placeholder="Enter region coords"  /> </br></br>
+<div class="info" style="font-size:10">Format supported :[AAA.BBB,CCC.DDD,EEE.FFF,GGG.HHH] - Don't put any spaces </div> </br>
+</br> 
+<label class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-3" id="imagelabel">Image file:</label>
+<input type="hidden" name="MAX_FILE_SIZE2" value="2097152">     
+<input class="col-xs-5 col-sm-4 col-md-4 col-lg-4 col-sm-offset-0 col-md-offset-0 col-lg-offset-0" type="file" id="image_file" name="image_file">   </br> </br> </br> 
+
+
+<div id ='message' class="message"></div> </br>
+<div class="center"><input type="button" id="submit"  class="btn btn-primary submit " value="Submit" onClick="submit()"> 
+<input type="button" id="cancel"  class="btn btn-danger cancel" value="Cancel" onclick="self.location.href='menu.html'"> </div> 
+
+<script src="https://code.jquery.com/jquery.js"></script>
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/create.js"></script>
+</body>
+</html>

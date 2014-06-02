@@ -1,0 +1,40 @@
+#namelabel,#regionnamelabel,#regioncoordslabel,#instrumentlabel,#imagelabel{
+
+font-weight: bold;
+text-align:right;
+
+
+}
+.addlabel,.info{
+
+text-align:center;
+}
+.message{
+font-weight: bold;
+color:red;
+text-align: center; 
+visibility: hidden; 
+}
+
+.createtitle{
+
+text-align: center; 
+font-weight: bold;
+font-size:25px;
+}
+
+#image_file{
+
+  display:block;
+  margin : 0 auto;
+}
+
+.submit,.cancel{
+  display:inline;
+
+}
+
+.center
+{
+    text-align:center;
+}
