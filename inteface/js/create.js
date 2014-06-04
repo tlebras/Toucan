@@ -1,20 +1,20 @@
 var tabfield;
 function submit() {
 	document.getElementById('message').style.visibility="hidden";
-	var fileInput = document.querySelector('#image_file');
+	var fileInput = document.querySelector('#image_file'); //get data from the file input
     var reader = new FileReader();
-	surline(document.getElementById('instrument'),false);
+	surline(document.getElementById('instrument'),false);	//highlight the input background in white
 	surline(document.getElementById('name'),false);
 	surline(document.getElementById('regionname'),false);
 	surline(document.getElementById('regioncoords'),false);    
 
-	if ( document.getElementById('name').value==""){
+	if ( document.getElementById('name').value==""){ //check if the name field is empty, if it is return an error
 		document.getElementById('message').innerHTML="Error: Please inform the name of your file";
 		document.getElementById('message').style.color="red";
 		document.getElementById('message').style.visibility="visible";
 		surline(document.getElementById('name'),true);
 	}
-	else if ( document.getElementById('instrument').value=="Selection"){
+	else if ( document.getElementById('instrument').value=="Selection"){ // check if the instrument slect is still on the "Selection" option. If it is, error.
 		document.getElementById('message').innerHTML="Error: Please inform the instrument";
 		document.getElementById('message').style.color="red";
 		document.getElementById('message').style.visibility="visible";
@@ -115,3 +115,15 @@ function surline(field, error)
    else
       field.style.backgroundColor = "";
 }
+
+$(document).ready(function(){
+    $.get('http://127.0.0.1:8000/api/v1/instrument?limit=0&filter_by=name',
+        function(data){
+            for(var i=0; i<data.objects.length; i++){
+                $("#instrument").append($("<option>").val(data.objects[i].name).html(data.objects[i].name));
+            } 
+        }, 
+        'jsonp' // /!\ NOT SURE IF SAFE         
+    );
+
+})
